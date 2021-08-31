@@ -4,14 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css"
+  />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Workshop</title>
 </head>
 <body>
-    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarcito">
+        <div class="container-fluid">
+            <div><a class="navbar-brand" id="titulo" href="#">Principe fresco</a></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div>
+          <div class="collapse navbar-collapse enlaces" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  uk-toggle="target: #offcanvas-flip"><b>SHOP</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  aria-current="page" href="#"><b>COLECTIONS</b></a>
+              </li>
+            </div>
+        </div>
+              <div id="inutiles">
+                <a href="#"><img src="./images/iconos.png" alt=""></a>
+            </div>
+          
+        </div>
+      </nav>
+      <!-- navbar -->
 
+<main id="main">
+      <!-- sidebar imagenes -->
+<div id="sidebar-imagenes">
+<img class="img-side" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630429229/work/Rectangle_1_mini_agk9ef.png" alt="">
+<img class="img-side" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630429229/work/Rectangle_2_mini_p6zpfn.png" alt="">
+<img class="img-side" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630429230/work/Rectangle_3_mini_n2ltoi.png" alt="">
+<img class="img-side" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630429230/work/Rectangle_4_mini_rivzkc.png" alt="">
+</div>
+<!-- sidebar -->
+
+
+      <!-- main imagenes -->
+<div id="main-imagenes">
+    <img class="img-main" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630428852/work/Rectangle_1_lxb2qg.png" alt="">
+    <img class="img-main" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630428895/work/Rectangle_2_mmjovw.png" alt="">
+    <img class="img-main" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630428950/work/Rectangle_3_onqxe6.png" alt="">
+    <img class="img-main" src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630428985/work/Rectangle_4_qipqsx.png" alt="">
+</div>
+<!-- main imagenes -->
+
+<div class="compra">
+  <h1>Crown Sweatshirt</h1>
+  <p>$ 80.00</p>
+  <div class="addtocart">
+    <input type="button" class="add-to-cart" value="ADD TO CART">
+  </div>  
+  <div class="addtocart2">
+    <input type="button" class="add-to-cart2" value="BUY IT NOW">
+  </div>
+  <div class="contenido">
+    <p>Let them know you’re 90s royalty with this official 
+      The Fresh Prince crown pattern sweater. 
+      Throw vintage vibes that Uncle Phil would approve of. 
+      Featuring woven The Fresh Prince logo on chest. 
+      Navy crown print crew neck sweatshirt with white ribbed 
+      collar and waist band. Cotton/Poly blend.</p>
+      <h8>Click for Sizing</h8>
+</div>
+</main>
+
+<!--Offcanvas-->
+<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+  <div class="uk-offcanvas-bar">
+       <button class="uk-offcanvas-close" type="button" uk-close></button>
+      <div class="info">
+
+          <img src="https://picsum.photos/200/300" alt="" class="imgoffcanvas">
+
+          <div class="cost">
+            <h6>producto</h6>
+            <p>S $85.00</p>
+            
+          </div>
+
+          
+          <div class="ButtonR">
+              <span>0</span>
+              <input type="button" value="Remove">
+          </div>
+      </div>
+
+      <div class="boxSubtotal">
+          <div>
+              <p>Subtotal</p>
+          </div>
+          <div>
+              <p class="Subtotal" id="Subtotal">0</p>
+          </div>
+      </div>
+
+      <div class="boxCheck">
+          <span>Shipping, taxes, and discount codes calculated at checkout.</span>
+          <input type="button" class="btn btn-success" value="Check out">
+           <h6>Please Note: All items are pre-order and will ship in 6-10 weeks. Guaranteed holiday delivery.</h6>
+      </div>
+
+     
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- footer -->
+<div id="footer-imagen">
+    <img src="./images/cover.png" alt="">
+</div>
+      <footer class="text-center text-white" style="background-color: #1D1D1D;">
+     <div id="container-footer">
+        <div id="logo-footer">
+           <img src="https://res.cloudinary.com/damb1cmmd/image/upload/v1630429059/work/Pr%C3%ADncipe_fresco_yh0izt.png" alt="">
+       </div>
+       <div id="iconos-footer">
+           <img src="./images/Frame 24.png" alt="">
+       </div>
+    </div>
+        
+
+       <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>      </footer>
+      <!-- footer -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-</html>:
+</html>
