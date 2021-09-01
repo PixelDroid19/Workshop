@@ -10,12 +10,17 @@
     "name": "Fresh Black Tie-Dye Hoodie",
     "image": "./images/card/card2.png",
     "costo": "$75.00"
-  }
-  ,
+  },
   {
     "id": 3,
     "name": "Pose For It Tee",
     "image": "./images/card/card3.png",
+    "costo": "$85.00"
+  },
+  {
+    "id": 4,
+    "name": "Crown Sweatshirt",
+    "image": "./images/card/card4.png",
     "costo": "$85.00"
   }
 ]
