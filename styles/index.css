@@ -87,17 +87,26 @@
   width: 100%;
   margin-bottom: 64px;
 }
+
+/*card*/
 .products{
+    background-color:rgb(212, 211, 211);
+}
+.divcard{
     display:grid;
-    background-color:red;
-    grid-template-columns: repeat( auto-fit, minmax(250px, auto) );
+    grid-template-columns: repeat( auto-fill, minmax(250px, auto));
+    width:100%;
+}
+.divtitle{
+    width: 100%;
+    text-align: center;
 }
 .card{
     margin: 10px;
 }
-
-.card-title{
+.card-body{
     text-align:center;
+    font-weight: 900;
 }
 
 

@@ -1,9 +1,21 @@
-{
-    "Products": [
-      {
-        "ImageUrl": "./images/card/card1.png",
-        "nombre": "Nombre",
-        "id": 1
-      }
-    ]
+[
+  {
+    "id": 1,
+    "name": "Fresh Stripe Sweater",
+    "image": "./images/card/card1.png",
+    "costo": "$45.00"
+  },
+  {
+    "id": 2,
+    "name": "Fresh Black Tie-Dye Hoodie",
+    "image": "./images/card/card2.png",
+    "costo": "$75.00"
   }
+  ,
+  {
+    "id": 4,
+    "name": "Pose For It Tee",
+    "image": "./images/card/card3.png",
+    "costo": "$85.00"
+  }
+]
