@@ -87,8 +87,20 @@
   width: 100%;
   margin-bottom: 64px;
 }
+.products{
+    display:grid;
+    background-color:red;
+    grid-template-columns: repeat( auto-fit, minmax(250px, auto) );
+}
+.card{
+    margin: 10px;
+}
 
-/*OffCanvas*/
+.card-title{
+    text-align:center;
+}
+
+
 
 /*OffCanvas*/
 .uk-offcanvas-bar {

@@ -1,0 +1,9 @@
+{
+    "Products": [
+      {
+        "ImageUrl": "./images/card/card1.png",
+        "nombre": "Nombre",
+        "id": 1
+      }
+    ]
+  }
