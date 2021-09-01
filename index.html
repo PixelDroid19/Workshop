@@ -24,7 +24,7 @@
           <div class="collapse navbar-collapse enlaces" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page"  uk-toggle="target: #offcanvas-flip"><b>SHOP</b></a>
+                <a class="nav-link active" aria-current="page"><b>SHOP</b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"  aria-current="page" href="#"><b>COLECTIONS</b></a>
@@ -63,10 +63,10 @@
   <h1 id="name">Crown Sweatshirt</h1>
   <p id="costo">$ 80.00</p>
   <div class="addtocart">
-    <input type="button" class="btn btn-primary add-to-cart" value="ADD TO CART">
+    <input type="button" class="btn btn-primary add-to-cart" id="ADD" value="ADD TO CART">
   </div>  
   <div class="addtocart2">
-    <input type="button" class="btn btn-dark add-to-cart" value="BUY IT NOW">
+    <input type="button" class="btn btn-dark add-to-cart" uk-toggle="target: #offcanvas-flip"  value="BUY IT NOW">
   </div>
   <div class="contenido">
     <p>Let them know you’re 90s royalty with this official 
@@ -80,23 +80,24 @@
 </main>
 
 <!--Offcanvas-->
+
 <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-  <div class="uk-offcanvas-bar">
+  <div class="uk-offcanvas-bar" >
        <button class="uk-offcanvas-close" type="button" uk-close></button>
       <div class="info">
 
-          <img src="https://picsum.photos/200/300" alt="" class="imgoffcanvas">
+          <img src="https://picsum.photos/200/300" alt="" class="imgoffcanvas" id="imgoffcanvas">
 
           <div class="cost">
             <h6>producto</h6>
-            <p>S $85.00</p>
+            <p>$ <i id="costCanvas"></i></p>
             
           </div>
 
           
           <div class="ButtonR">
-              <span>0</span>
-              <input type="button" value="Remove">
+              <span id="cantProducts">0</span>
+              <input type="button" id="Remove" value="Remove">
           </div>
       </div>
 
@@ -112,7 +113,7 @@
       <div class="boxCheck">
           <span>Shipping, taxes, and discount codes calculated at checkout.</span>
           <input type="button" class="btn btn-success" value="Check out">
-           <h6>Please Note: All items are pre-order and will ship in 6-10 weeks. Guaranteed holiday delivery.</h6>
+          <p>Please Note: All items are pre-order and will ship in 6-10 weeks. Guaranteed holiday delivery.</p>
       </div>
 
      

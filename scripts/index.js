@@ -13,6 +13,16 @@ const costo = document.getElementById('costo'),
       imgSmall3 = document.getElementById('imgSmall3'),
       imgSmall4 = document.getElementById('imgSmall4');
 
+const imgoffcanvas = document.getElementById('imgoffcanvas'),
+        costCanvas = document.getElementById('costCanvas'),
+        ADD = document.getElementById('ADD'),
+        CostoMain = document.getElementById('costo'),
+        Subtotal = document.getElementById('Subtotal')
+        Remove = document.getElementById('Remove'),
+        cantProducts = document.getElementById('cantProducts');
+
+let  CostTotal = 0, CostActual = 0, Cantidad = 0;
+
 let Posicion = 0;
   //Cartas de los productos
   document.addEventListener("DOMContentLoaded", () => {
@@ -59,6 +69,9 @@ items.addEventListener("click", (e) => {
   
   const setItem = (e) => {
     Posicion = e.getAttribute("data-id");
+    Cantidad = 0; CostTotal = 0;
+    cantProducts.textContent = Cantidad;
+    Subtotal.textContent = CostTotal;
     Switchimg(Posicion);
   };
 
@@ -70,20 +83,39 @@ items.addEventListener("click", (e) => {
       const res = await fetch("./Data/Frame.json");
       const data = await res.json();
 
-        
         const {name, Cost, Frame1, Frame2, Frame3, Frame4,FrameSmall1,FrameSmall2,FrameSmall3,FrameSmall4} = data[pos];
         Name.textContent = name;
-        costo.textContent = Cost;
+        CostActual = parseInt(Cost);
+        console.log(parseInt(Cost));
+        CostoMain.textContent = `$ ${Cost}`;
+        costCanvas.textContent = Cost;
         img1.setAttribute("src", Frame1);
         img2.setAttribute("src", Frame2);
         img3.setAttribute("src", Frame3);
         img4.setAttribute("src", Frame4);
-
         imgSmall1.setAttribute("src", FrameSmall1);
         imgSmall2.setAttribute("src", FrameSmall2);
         imgSmall3.setAttribute("src", FrameSmall3);
         imgSmall4.setAttribute("src", FrameSmall4);
+
+        imgoffcanvas.setAttribute("src", FrameSmall1);
     } catch (error) {
       console.log(error);
     }
   };
+
+  ADD.addEventListener("click", () =>{
+    CostTotal += CostActual;
+    Cantidad++;
+    cantProducts.textContent = Cantidad;
+    Subtotal.textContent = CostTotal;
+  })
+
+  Remove.addEventListener("click", () =>{
+    if(Cantidad > 0){
+    CostTotal -= CostActual;
+    Cantidad--;
+    cantProducts.textContent = Cantidad;
+    Subtotal.textContent = CostTotal;
+    }
+  })

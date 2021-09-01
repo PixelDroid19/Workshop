@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Fresh Stripe Sweater",
-    "Cost": "$45.00",
+    "Cost": "45.00",
     "Frame1": "./images/Frames/Frame1.png",
     "Frame2": "./images/Frames/Frame2.png",
     "Frame3": "./images/Frames/Frame3.png",
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "name": "Fresh Black Tie-Dye Hoodie",
-    "Cost": "$75.00",
+    "Cost": "75.00",
     "Frame1": "./images/Frames/Frame5.png",
     "Frame2": "./images/Frames/Frame6.png",
     "Frame3": "./images/Frames/Frame7.png",
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "name": "Pose For It Tee",
-    "Cost": "$85.00",
+    "Cost": "85.00",
     "Frame1": "./images/Frames/Frame9.png",
     "Frame2": "./images/Frames/Frame10.png",
     "Frame3": "./images/Frames/Frame11.png",
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "name": "Crown Sweatshirt",
-    "Cost": "$80.00",
+    "Cost": "80.00",
     "Frame1": "./images/Frames/Frame13.png",
     "Frame2": "./images/Frames/Frame14.png",
     "Frame3": "./images/Frames/Frame15.png",
