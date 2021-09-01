@@ -10,7 +10,7 @@ const items = document.getElementById("items"),
     try {
       const res = await fetch("./Data/items.json");
       const data = await res.json();
-  
+        console.log(data[0]);
       //Recorre el json con map
       data.map((Datos) => {
         const { id, name, image, costo} = Datos;
@@ -29,3 +29,22 @@ const items = document.getElementById("items"),
     }
   };
   
+
+  
+//Seleccionar items
+items.addEventListener("click", (e) => {
+    capturaItems(e);
+  });
+  
+  const capturaItems = (e) => {
+    //item que contenga la clase 'selectItems' devuelve
+    if (e.target.classList.contains("card-img-top")) {
+      //captura todos los elementos de la target
+      setItem(e.target.parentElement);
+    }
+  };
+  
+  const setItem = (e) => {
+    Posicion = e.getAttribute("data-id");
+    console.log(Posicion);
+  };
