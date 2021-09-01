@@ -1,170 +1,170 @@
-@import url('http://fonts.cdnfonts.com/css/vegan-style-personal-use');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
-
-#navbarcito{
-background-color: #ffffff !important;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 25px 83px;
-position: fixed;
-z-index: 1;
-width: 100%;
+#navbarcito {
+  background-color: #ffffff !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 83px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
-#titulo{
-    font-family: 'Vegan Style Personal Use';
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-color: #FF4C13;
+#titulo {
+  font-family: "Vegan Style Personal Use";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ff4c13;
 }
 
-.enlaces{
-    font-family: 'Poppins';
-font-weight: 400 !important;
-font-size: 24px;
-color:#1D1D1D;
+.add-to-cart {
+  margin-bottom: 10px;
+  width: 80%;
+  height: 40px;
 }
 
-#main{
-    display:grid;
-    grid-template-columns: 10% 60% 30%;
-    align-items: start;
-    justify-content: center;
-    padding-top:160px;
+.enlaces {
+  font-family: "Poppins";
+  font-weight: 400 !important;
+  font-size: 24px;
+  color: #1d1d1d;
 }
 
-#sidebar-imagenes{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+#main {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  align-items: start;
+  justify-content: center;
+  padding-top: 160px;
 }
 
-.compra{
-    padding: 4px;
+#sidebar-imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.img-side{
-    padding-bottom:24px !important;
+.compra {
+  padding: 4px;
 }
 
-#main-imagenes{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+.img-side {
+  padding-bottom: 24px !important;
 }
 
-.img-main{
-    margin-bottom:24px;
+#main-imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#container-footer{
-    padding: 64px;
+.img-main {
+  margin-bottom: 24px;
 }
 
-#logo-footer{
-    padding-bottom:24px !important;
+#container-footer {
+  padding: 64px;
 }
 
-#iconos-footer{
-    padding-top:24px !important;
+#logo-footer {
+  padding-bottom: 24px !important;
 }
 
-#footer-imagen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    margin-bottom: 64px;
+#iconos-footer {
+  padding-top: 24px !important;
 }
 
+#footer-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 64px;
+}
 
 /*OffCanvas*/
 
-
-
 /*OffCanvas*/
-.uk-offcanvas-bar{
-    color:black;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-rows: 20% 10% 60%;
+.uk-offcanvas-bar {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 20% 10% 60%;
 }
-.cost h6{
-    color:black;
+.cost h6 {
+  color: black;
 }
-.Subtotal{
-    text-align:right;
+.Subtotal {
+  text-align: right;
 }
-.boxSubtotal{
-    display:grid;
-    grid-template-columns: 50% 50%;
+.boxSubtotal {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-.boxSubtotal div{
-    margin:20px;
-
-}
-
-.boxCheck{
-    display: flex;
-    flex-direction: column;
+.boxSubtotal div {
+  margin: 20px;
 }
 
-.boxCheck span{
-    color: black;
-    font-size: 10px;
-    margin-bottom: 20px;
+.boxCheck {
+  display: flex;
+  flex-direction: column;
 }
 
-.boxCheck h6{
-    margin-top:20px;
-    color: black;
-    font-size: 14px;
-    margin-bottom: 20px;
+.boxCheck span {
+  color: black;
+  font-size: 10px;
+  margin-bottom: 20px;
 }
 
-.btn-success{
-    background-color:rgb(40, 40, 228);
+.boxCheck h6 {
+  margin-top: 20px;
+  color: black;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-.btn-success:hover{
-    background-color:rgb(9, 9, 248);
+.btn-success {
+  background-color: rgb(40, 40, 228);
 }
 
-.info{   
-    display:flex;
-    flex-direction: row;
+.btn-success:hover {
+  background-color: rgb(9, 9, 248);
 }
 
-.cost{
-    margin-left: 10px;
+.info {
+  display: flex;
+  flex-direction: row;
 }
 
-.ButtonR{
-    display:flex;
-    margin-left: 20px;
-    text-align: center;
-    flex-direction: column;
+.cost {
+  margin-left: 10px;
 }
 
-.ButtonR input[type='button']{
-    border:none;
-    border-top:1px solid black;
-    background-color:transparent;
+.ButtonR {
+  display: flex;
+  margin-left: 20px;
+  text-align: center;
+  flex-direction: column;
 }
 
-.imgoffcanvas{
-    width:50px;
-    height:50px;
+.ButtonR input[type="button"] {
+  border: none;
+  border-top: 1px solid black;
+  background-color: transparent;
+}
+
+.imgoffcanvas {
+  width: 50px;
+  height: 50px;
 }
 
 .uk-offcanvas-flip .uk-open > .uk-offcanvas-bar {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
